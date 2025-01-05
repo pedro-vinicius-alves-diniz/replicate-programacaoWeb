@@ -3,14 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link href="./css/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="img/programacao-web-logo.jpg"
+      type="image/x-icon"
+    />
+
+    <script src="js/scripts.js" defer></script>
     <title>Replicação - Programação Web</title>
   </head>
   <body>
-    <div id="container">
-        <header>
-            
-        </header>
+    <div id="container" class="font-poppins">
+      <header class="bg-neutral-1 w-dvw">
+        <!-- NAVBAR -->
+        <nav id="container-navbar" class="w-full max-w-7xl my-0 py-1 mx-auto">
+          <div id="content-navbar" class="flex items-center justify-between mx-3">
+              <a href="#">
+                <i class="bi bi-list"></i>
+              </a>
+              <a href="#">
+                <b><</b>
+                Programação Web
+                <b>/></b>
+              </a>
+              <a href="#">
+                <i class="bi bi-box-arrow-in-right"></i>
+                Login
+              </a>
+          </div>
+        </nav>
+
+        <div id="banner"></div>
+      </header>
+
+      <main>
+        <div id="container-courses"></div>
+
+        <div id="container-benefits"></div>
+
+        <div id="container-quote"></div>
+      </main>
+
+      <footer></footer>
     </div>
   </body>
 </html>
