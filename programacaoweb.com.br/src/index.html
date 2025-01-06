@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link href="./css/output.css" rel="stylesheet" />
+    <link href="./css/input.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
       href="img/programacao-web-logo.jpg"
@@ -24,23 +25,84 @@
     <title>Replicação - Programação Web</title>
   </head>
   <body>
-    <div id="container" class="font-poppins">
+    <div id="container" class="font-poppins z-0">
       <header class="bg-neutral-1 w-dvw">
         <!-- NAVBAR -->
         <nav id="container-navbar" class="w-full max-w-7xl my-0 py-1 mx-auto">
-          <div id="content-navbar" class="flex items-center justify-between mx-3">
-              <a href="#">
-                <i class="bi bi-list"></i>
-              </a>
-              <a href="#">
-                <b><</b>
-                Programação Web
-                <b>/></b>
-              </a>
-              <a href="#">
-                <i class="bi bi-box-arrow-in-right"></i>
-                Login
-              </a>
+          <div
+            id="content-navbar"
+            class="flex items-center justify-between mx-3 text-zinc-50 text-base"
+          >
+            <!-- ICON MENU -->
+            <a href="#" id="iconMenu" class="hoverMenu text-xl md:text-3xl">
+              <i class="bi bi-list"></i>
+            </a>
+
+            <!-- MASK OVER 'container' -->
+            <div
+              id="mask"
+              class="hidden z-10 fixed top-0 right-0 left-0 bottom-0 bg-zinc-900/50"
+            ></div>
+
+            <!-- MENU LIST -->
+            <div
+              id="menu-list"
+              class="hidden z-50 fixed top-0 left-0 bottom-0 bg-neutral-1 w-[280px] p-2"
+            >
+              <i
+                id="button-close"
+                class="bi bi-x-circle-fill flex justify-end cursor-pointer text-2xl"
+              ></i>
+              <ul class="flex flex-col gap-5 mt-5 text-zinc-400 text-center">
+                <li class="item-menu transition-colors active">
+                  <a href="#"> Home </a>
+                </li>
+
+                <li class="item-menu transition-colors hover:text-zinc-200">
+                  <a href="#">
+                    <i class="bi bi-card-text"></i>
+                    Blog
+                  </a>
+                </li>
+
+                <li class="item-menu transition-colors hover:text-zinc-200">
+                  <a href="#">
+                    <i class="bi bi-mortarboard"></i>
+                    Cursos Grátis
+                  </a>
+                </li>
+
+                <li class="item-menu transition-colors hover:text-zinc-200">
+                  <a href="#">
+                    <i class="bi bi-stars"></i>
+                    Cursos Pagos
+                  </a>
+                </li>
+
+                <li class="item-menu transition-colors hover:text-zinc-200">
+                  <a href="#">
+                    <i class="bi bi-award"></i>
+                    Certificados
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- BRAND LOGO' -->
+            <a href="#" class="md:text-2xl">
+              <b class="drop-shadow-logo"><</b>
+              Programação Web
+              <b class="drop-shadow-logo">/></b>
+            </a>
+
+            <!-- BUTTON LOGIN -->
+            <a
+              href="#"
+              class="bg-yellow-primary text-zinc-950 font-semibold p-1 rounded-md transition-colors hover:bg-yellow-300"
+            >
+              <i class="bi bi-box-arrow-in-right"></i>
+              Login
+            </a>
           </div>
         </nav>
 

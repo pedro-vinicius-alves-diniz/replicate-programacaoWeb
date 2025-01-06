@@ -4,10 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'neutral-1': '#212529'
+        'neutral-1': '#212529',
+        'yellow-primary': '#FFC107'
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif']
+      },
+      dropShadow: {
+        'logo': '0px 0px 5px deeppink'
       }
     },
   },
