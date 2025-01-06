@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+header{
+    --angle: 0deg;
+    border-bottom: 0.5vmin solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 10s linear 0s infinite normal none running rotate;
+}
+
 .active{
     @apply text-zinc-200 font-bold bg-zinc-600 rounded-md py-1
+}
+
+#btn-start-now{
+    transition: filter .2s ease;
+}
+
+#barra{
+    animation: animationBarra .3s alternate infinite;
 }
 
 @media(min-width: 768px){
@@ -30,5 +45,14 @@
     }
     100%{
         left: -300px;
+    }
+}
+
+@keyframes animationBarra{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
