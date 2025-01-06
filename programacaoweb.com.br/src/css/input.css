@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    @apply text-zinc-200 font-bold bg-zinc-600 rounded-md py-1
+}
+
+@media(min-width: 768px){
+    .hoverMenu{
+        transition: transform .3s ease;
+    }
+    .hoverMenu:hover{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes openMenu{
+    0%{
+        left: -300px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes closeMenu{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -300px;
+    }
+}
