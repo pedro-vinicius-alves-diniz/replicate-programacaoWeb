@@ -26,6 +26,8 @@
   </head>
   <body>
     <div id="container" class="font-poppins z-0">
+
+      <!-- HEADER -->
       <header class="bg-neutral-1 w-dvw">
         <!-- NAVBAR -->
         <nav id="container-navbar" class="w-full max-w-7xl my-0 py-1 mx-auto">
@@ -44,15 +46,21 @@
               class="hidden z-10 fixed top-0 right-0 left-0 bottom-0 bg-zinc-900/50"
             ></div>
 
-            <!-- MENU LIST -->
+            <!-- CONTAINER MENU -->
             <div
               id="menu-list"
               class="hidden z-50 fixed top-0 left-0 bottom-0 bg-neutral-1 w-[280px] p-2"
             >
-              <i
-                id="button-close"
-                class="bi bi-x-circle-fill flex justify-end cursor-pointer text-2xl"
-              ></i>
+              <!-- CONTAINER BTN CLOSE -->
+              <div class="flex justify-end">
+                <!-- BTN CLOSE -->
+                <i
+                  id="button-close"
+                  class="bi bi-x-circle-fill  cursor-pointer text-2xl border"
+                ></i>
+              </div>
+
+              <!-- MENU LIST -->
               <ul class="flex flex-col gap-5 mt-5 text-zinc-400 text-center">
                 <li class="item-menu transition-colors active">
                   <a href="#"> Home </a>
@@ -106,7 +114,34 @@
           </div>
         </nav>
 
-        <div id="banner"></div>
+        <!-- BANNER -->
+        <div 
+          id="banner"
+          class="flex items-center w-full max-w-7xl mx-auto py-10"  
+        >
+          <div 
+            id="content-banner"
+          >
+            <h1 class="text-5xl text-white font-bold">
+              Cursos de Programação <br> 
+              <span id="texto-banner" class="text-2xl text-yellow-primary"></span><span id="barra" >|</span>
+            </h1>
+
+            <p class="text-zinc-400 text-lg font-medium mt-4 mb-7">Aprenda Programação Web do zero absoluto com cursos completos e com uma didática impecável!</p>
+
+            <a 
+              href="#"
+              id="btn-start-now"
+              class="bg-secondary text-white text-lg py-3 px-5 rounded-md hover:brightness-90"
+            >
+              <i class="bi bi-play"></i>
+              Começar agora
+            </a>
+          </div>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EAOg2wImvkc?si=8mG25-toee5LOwgG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
       </header>
 
       <main>
@@ -117,7 +152,9 @@
         <div id="container-quote"></div>
       </main>
 
-      <footer></footer>
+      <footer>
+
+      </footer>
     </div>
   </body>
 </html>
