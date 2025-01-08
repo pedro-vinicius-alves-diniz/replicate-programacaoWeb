@@ -4,7 +4,7 @@ const menuList = document.getElementById("menu-list");
 const mask = document.getElementById("mask");
 const buttonClose = document.getElementById("button-close");
 const textoBanner = document.getElementById("texto-banner");
-const valorBanner = "HTML, CSS, JavaScript, PHP, Python, Java, entre outros.";
+const valorBanner = "HTML, CSS, JS, Python, Java, entre outros.";
 const barra = document.getElementById("barra");
 let index = 0;
 

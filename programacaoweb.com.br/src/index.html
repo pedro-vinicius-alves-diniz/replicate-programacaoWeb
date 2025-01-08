@@ -25,15 +25,14 @@
     <title>Replicação - Programação Web</title>
   </head>
   <body>
-    <div id="container" class="font-poppins z-0">
-
+    <div id="container" class="font-poppins z-0 overflow-x-hidden">
       <!-- HEADER -->
-      <header class="bg-neutral-1 w-dvw">
+      <header class="bg-neutral-1 w-full">
         <!-- NAVBAR -->
-        <nav id="container-navbar" class="w-full max-w-7xl my-0 py-1 mx-auto">
+        <nav id="container-navbar" class="w-[95%] max-w-7xl my-0 mx-auto">
           <div
             id="content-navbar"
-            class="flex items-center justify-between mx-3 text-zinc-50 text-base"
+            class="flex items-center justify-between w-full max-w-7xl pt-1 mx-auto text-zinc-50 text-base"
           >
             <!-- ICON MENU -->
             <a href="#" id="iconMenu" class="hoverMenu text-xl md:text-3xl">
@@ -56,7 +55,7 @@
                 <!-- BTN CLOSE -->
                 <i
                   id="button-close"
-                  class="bi bi-x-circle-fill  cursor-pointer text-2xl border"
+                  class="bi bi-x-circle-fill cursor-pointer text-2xl"
                 ></i>
               </div>
 
@@ -115,21 +114,26 @@
         </nav>
 
         <!-- BANNER -->
-        <div 
+        <div
           id="banner"
-          class="flex items-center w-full max-w-7xl mx-auto py-10"  
+          class="flex items-center w-full max-w-7xl mx-auto py-10"
         >
-          <div 
-            id="content-banner"
-          >
-            <h1 class="text-5xl text-white font-bold">
-              Cursos de Programação <br> 
-              <span id="texto-banner" class="text-2xl text-yellow-primary"></span><span id="barra" >|</span>
+          <div id="content-banner" class="text-center max-w-[90%] mx-auto">
+            <h1 class="text-3xl lg:text-5xl text-white font-bold">
+              Cursos de Programação <br />
+              <span
+                id="texto-banner"
+                class="text-lg lg:text-2xl text-yellow-primary"
+              ></span
+              ><span id="barra">|</span>
             </h1>
 
-            <p class="text-zinc-400 text-lg font-medium mt-4 mb-7">Aprenda Programação Web do zero absoluto com cursos completos e com uma didática impecável!</p>
+            <p class="text-zinc-400 text-sm font-medium mt-4 mb-7 lg:text-lg">
+              Aprenda Programação Web do zero absoluto com cursos completos e
+              com uma didática impecável!
+            </p>
 
-            <a 
+            <a
               href="#"
               id="btn-start-now"
               class="bg-secondary text-white text-lg py-3 px-5 rounded-md hover:brightness-90"
@@ -139,14 +143,208 @@
             </a>
           </div>
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/EAOg2wImvkc?si=8mG25-toee5LOwgG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+          <iframe
+            class="hidden xl:flex"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/EAOg2wImvkc?si=8mG25-toee5LOwgG"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </header>
 
-      <main>
-        <div id="container-courses">
-          
+      <main class="w-dvw">
+        <div id="container-courses" class="w-[85%] max-w-7xl mx-auto">
+          <div class="my-20">
+            <h4 class="text-3xl text-zinc-900 text-center font-bold">
+              Comece agora
+            </h4>
+
+            <p class="text-zinc-500 text-center max-w-2xl m-auto text-lg mt-2">
+              Embarque nessa jornada no incrível mundo da programação web e
+              torne-se um desenvolvedor completo!
+            </p>
+
+            <!-- CONTAINER CARDS COURSES -->
+            <div
+              class="mt-12 flex flex-col items-center justify-center gap-7 max-w-7xl m-auto lg:justify-between lg:items-center lg:flex-row"
+            >
+              <a
+                href="#"
+                class="max-w-md lg:max-w-xs h-full lg:h-[530px] overflow-hidden shadow-card rounded-sm"
+              >
+                <img src="img/html.jpg" alt="Icone HTML" />
+                <div class="max-w-[80%] mx-auto my-5">
+                  <div class="flex gap-1">
+                    <p
+                      class="text-xs bg-secondary text-white py-1 px-2 font-semibold rounded-full"
+                    >
+                      GRATUITO
+                    </p>
+                    <p
+                      class="text-xs bg-green-700 text-white py-1 px-2 font-semibold rounded-full"
+                    >
+                      COMPLETO
+                    </p>
+                  </div>
+
+                  <div class="my-2">
+                    <h4 class="text-zinc-900 font-semibold text-xl">
+                      CURSO DE HTML
+                    </h4>
+
+                    <div class="flex flex-wrap text-neutral-500 text-sm gap-2">
+                      <p>
+                        <i class="bi bi-award"></i>
+                        Certificado
+                      </p>
+                      <p>
+                        <i class="bi bi-clock"></i>
+                        4 Horas
+                      </p>
+                      <p>
+                        <i class="bi bi-play-circle"></i>
+                        15 Aulas
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-base text-neutral-800 text-justify mb-4">
+                    Aprenda a linguagem de marcação que forma a estrutura de
+                    toda página na web. Seu ponto de partida!
+                  </p>
+
+                  <p
+                    class="flex gap-3 items-center font-semibold text-zinc-900"
+                  >
+                    <img
+                      src="img/dimitri150x150.png"
+                      alt="Foto de perfil de Dimitri Teixeira"
+                      class="w-10 rounded-full"
+                    />
+                    Dimitri Teixeira
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="max-w-md lg:max-w-xs h-full lg:h-[530px] overflow-hidden shadow-card rounded-sm"
+              >
+                <img src="img/css.jpg" alt="Icone HTML" />
+
+                <div class="max-w-[80%] mx-auto my-5 justify-between">
+                  <div class="flex gap-1">
+                    <p
+                      class="text-xs bg-secondary text-white py-1 px-2 font-semibold rounded-full"
+                    >
+                      GRATUITO
+                    </p>
+                    <p
+                      class="text-xs bg-green-700 text-white py-1 px-2 font-semibold rounded-full"
+                    >
+                      COMPLETO
+                    </p>
+                  </div>
+
+                  <div class="my-2">
+                    <h4 class="text-zinc-900 font-semibold text-xl">
+                      CURSO DE CSS
+                    </h4>
+
+                    <div class="flex flex-wrap text-neutral-500 text-sm gap-2">
+                      <p>
+                        <i class="bi bi-award"></i>
+                        Certificado
+                      </p>
+                      <p>
+                        <i class="bi bi-clock"></i>
+                        4 Horas
+                      </p>
+                      <p>
+                        <i class="bi bi-play-circle"></i>
+                        15 Aulas
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <p class="text-base text-neutral-800 text-justify mb-4">
+                    Aprenda a linguagem de marcação que forma a estrutura de
+                    toda página na web. Seu ponto de partida!
+                  </p>
+
+                  <p
+                    class="flex gap-3 items-center font-semibold text-zinc-900"
+                  >
+                    <img
+                      src="img/dimitri150x150.png"
+                      alt="Foto de perfil de Dimitri Teixeira"
+                      class="w-10 rounded-full"
+                    />
+                    Dimitri Teixeira
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="max-w-md lg:max-w-xs  h-full lg:h-[530px] overflow-hidden shadow-card rounded-sm"
+              >
+                <img src="img/javascript.jpg" alt="Icone HTML" />
+                <div class="max-w-[80%] mx-auto my-5">
+                  <div class="flex gap-1">
+                    <p
+                      class="text-xs bg-secondary text-white py-1 px-2 font-semibold rounded-full"
+                    >
+                      GRATUITO
+                    </p>
+                    <p
+                      class="text-xs bg-green-700 text-white py-1 px-2 font-semibold rounded-full"
+                    >
+                      COMPLETO
+                    </p>
+                  </div>
+                  <div class="my-2">
+                    <h4 class="text-zinc-900 font-semibold text-xl">
+                      CURSO DE JAVASCRIPT
+                    </h4>
+                    <div class="flex flex-wrap text-neutral-500 text-sm gap-2">
+                      <p>
+                        <i class="bi bi-award"></i>
+                        Certificado
+                      </p>
+                      <p>
+                        <i class="bi bi-clock"></i>
+                        4 Horas
+                      </p>
+                      <p>
+                        <i class="bi bi-play-circle"></i>
+                        15 Aulas
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-base text-neutral-800 text-justify mb-4">
+                    Aprenda a linguagem de marcação que forma a estrutura de
+                    toda página na web. Seu ponto de partida!
+                  </p>
+
+                  <p
+                    class="flex gap-3 items-center font-semibold text-zinc-900"
+                  >
+                    <img
+                      src="img/dimitri150x150.png"
+                      alt="Foto de perfil de Dimitri Teixeira"
+                      class="w-10 rounded-full"
+                    />
+                    Dimitri Teixeira
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div id="container-benefits"></div>
@@ -154,9 +352,7 @@
         <div id="container-quote"></div>
       </main>
 
-      <footer>
-
-      </footer>
+      <footer></footer>
     </div>
   </body>
 </html>

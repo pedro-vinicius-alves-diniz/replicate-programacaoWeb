@@ -13,6 +13,9 @@ module.exports = {
       },
       dropShadow: {
         'logo': '0px 0px 5px deeppink'
+      },
+      boxShadow: {
+        'card': 'rgba(0, 0, 0, 0.15) 0px 8px 16px 0px' 
       }
     },
   },
