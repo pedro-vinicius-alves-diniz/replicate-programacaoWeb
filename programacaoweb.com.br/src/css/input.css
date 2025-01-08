@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-header{
+header,
+footer{
     --angle: 0deg;
     border-bottom: 0.5vmin solid;
     border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
@@ -26,6 +27,13 @@ header{
         transition: transform .3s ease;
     }
     .hoverMenu:hover{
+        transform: scale(1.2);
+    }
+
+    #button-close{
+        transition: transform .3s ease;
+    }
+    #button-close:hover{
         transform: scale(1.2);
     }
 }

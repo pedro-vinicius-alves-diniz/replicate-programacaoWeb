@@ -29,10 +29,10 @@
       <!-- HEADER -->
       <header class="bg-neutral-1 w-full">
         <!-- NAVBAR -->
-        <nav id="container-navbar" class="w-[95%] max-w-7xl my-0 mx-auto">
+        <nav id="container-navbar" class="w-full fixed top-0 left-0 right-0 bg-neutral-1 shadow-1 z-10">
           <div
             id="content-navbar"
-            class="flex items-center justify-between w-full max-w-7xl pt-1 mx-auto text-zinc-50 text-base"
+            class="flex items-center justify-between w-[95%] max-w-7xl py-2 mx-auto text-zinc-50 text-base"
           >
             <!-- ICON MENU -->
             <a href="#" id="iconMenu" class="hoverMenu text-xl md:text-3xl">
@@ -105,7 +105,7 @@
             <!-- BUTTON LOGIN -->
             <a
               href="#"
-              class="bg-yellow-primary text-zinc-950 font-semibold p-1 rounded-md transition-colors hover:bg-yellow-300"
+              class="bg-yellow-primary text-zinc-950 font-semibold py-1 px-2 rounded-md transition-colors hover:bg-yellow-300"
             >
               <i class="bi bi-box-arrow-in-right"></i>
               Login
@@ -116,9 +116,9 @@
         <!-- BANNER -->
         <div
           id="banner"
-          class="flex items-center w-full max-w-7xl mx-auto py-10"
+          class="flex items-center w-full max-w-7xl mx-auto py-10 z-0"
         >
-          <div id="content-banner" class="text-center max-w-[90%] mx-auto">
+          <div id="content-banner" class="text-center max-w-[90%] mx-auto mt-5">
             <h1 class="text-3xl lg:text-5xl text-white font-bold">
               Cursos de Programação <br />
               <span
@@ -144,7 +144,7 @@
           </div>
 
           <iframe
-            class="hidden xl:flex"
+            class="hidden mt-5 xl:flex"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/EAOg2wImvkc?si=8mG25-toee5LOwgG"
@@ -349,19 +349,22 @@
         </div>
 
         <!-- CONTAINER BENEFITS -->
-        <div id="container-benefits" class="flex gap-4 max-w-7xl mx-auto my-16">
+        <div id="container-benefits" class="flex flex-col lg:flex-row gap-10 w-[70%] lg:w-[95%] max-w-7xl mx-auto my-16">
           <p class="float-start text-3xl text-zinc-900 font-bold">
             <i class="bi bi-signpost-split"></i>
             O melhor caminho para começar a aprender programação web é aqui!
           </p>
 
-          <div class="grid grid-cols-2 gap-x-8 gap-y-8">
-
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8">
             <div class="flex flex-col gap-2">
               <div>
-                <i class="bi bi-piggy-bank bg-secondary text-white text-2xl py-2 px-3 rounded-lg"></i>
+                <i
+                  class="bi bi-piggy-bank bg-secondary text-white text-2xl py-2 px-3 rounded-lg"
+                ></i>
               </div>
-              <h4 class="font-semibold text-zinc-900 text-lg mt-1">Valor Acessível</h4>
+              <h4 class="font-semibold text-zinc-900 text-lg mt-1">
+                Valor Acessível
+              </h4>
               <p class="text-zinc-800">
                 Faça nossos cursos com excelente custo benefício, com a
                 qualidade de cursos muito caros.
@@ -370,9 +373,13 @@
 
             <div class="flex flex-col gap-2">
               <div>
-                <i class="bi bi-compass bg-secondary text-white text-2xl py-2 px-3 rounded-lg"></i>
+                <i
+                  class="bi bi-compass bg-secondary text-white text-2xl py-2 px-3 rounded-lg"
+                ></i>
               </div>
-              <h4 class="font-semibold text-zinc-900 text-lg mt-1">Passo a Passo</h4>
+              <h4 class="font-semibold text-zinc-900 text-lg mt-1">
+                Passo a Passo
+              </h4>
               <p class="text-zinc-800">
                 Você segue uma sequência de aprendizado que faz ter os melhores
                 resultados no menor espaço de tempo, do zero ao avançado.
@@ -381,7 +388,9 @@
 
             <div class="flex flex-col gap-2">
               <div>
-                <i class="bi bi-mortarboard bg-secondary text-white text-2xl py-2 px-3 rounded-lg"></i>
+                <i
+                  class="bi bi-mortarboard bg-secondary text-white text-2xl py-2 px-3 rounded-lg"
+                ></i>
               </div>
               <h4 class="font-semibold text-zinc-900 text-lg mt-1">Didático</h4>
               <p class="text-zinc-800">
@@ -392,23 +401,56 @@
 
             <div class="flex flex-col gap-2">
               <div>
-                <i class="bi bi-award bg-secondary text-white text-2xl py-2 px-3 rounded-lg"></i>
+                <i
+                  class="bi bi-award bg-secondary text-white text-2xl py-2 px-3 rounded-lg"
+                ></i>
               </div>
-              <h4 class="font-semibold text-zinc-900 text-lg mt-1">Certificado</h4>
+              <h4 class="font-semibold text-zinc-900 text-lg mt-1">
+                Certificado
+              </h4>
               <p class="text-zinc-800">
                 Os cursos oferecem certificação profissionalizante de acordo com
                 a Lei n° 9.394/96 de Cursos Livres e Profissionalizantes.
-                <a href="#">Saiba mais</a>
+                <a href="#" class="text-secondary underline">Saiba mais</a>
               </p>
             </div>
           </div>
         </div>
 
         <!-- CONTAINER QUOTE -->
-        <div id="container-quote"></div>
+        <div id="container-quote" class="bg-zinc-50 w-full py-20">
+          <div class="w-[95%] max-w-2xl m-auto flex flex-col gap-7">
+            <p class="text-center text-xl text-zinc-800 flex-shrink">
+              "O <b>conhecimento pode mudar uma vida</b>. Aprender algo novo
+              proporciona um <b>mundo de oportunidades</b>. Espero que nosso
+              conteúdo <b>faça a diferença</b> na sua carreira profissional!"
+            </p>
+            <p
+              class="text-center flex flex-shrink items-center justify-center gap-4 font-bold text-zinc-800"
+            >
+              <img
+                src="img/dimitri150x150.png"
+                alt="Foto perfil Dimitri Teixeira"
+                class="w-20 rounded-full"
+              />
+              Dimitri Teixeira<span class="text-secondary">/</span>Professor
+            </p>
+          </div>
+        </div>
       </main>
 
-      <footer></footer>
+      <footer class="bg-neutral-1 w-full">
+        <div class="text-zinc-200 text-sm flex flex-col xl:flex-row gap-4 items-center justify-center xl:justify-between w-[95%] max-w-7xl mx-auto py-10 flex-wrap">
+            <p class="text-center">Copyright © 2025 Programação Web é um projeto da Genial Cursos — CNPJ 26.249.855/0001-44</p>
+
+            <div class="flex gap-4">
+              <a href="#" class="underline">Contato</a>
+              <a href="#" class="underline">Politica de Privacidade</a>
+              <a href="#" class="underline">Politica de Cookies</a>
+              <a href="#" class="underline">Termos de uso</a>
+            </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

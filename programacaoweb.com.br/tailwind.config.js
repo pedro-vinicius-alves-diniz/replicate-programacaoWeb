@@ -15,7 +15,8 @@ module.exports = {
         'logo': '0px 0px 5px deeppink'
       },
       boxShadow: {
-        'card': 'rgba(0, 0, 0, 0.15) 0px 8px 16px 0px' 
+        'card': 'rgba(0, 0, 0, 0.15) 0px 8px 16px 0px' ,
+        '1': '0 0 12px 4px rgba(0,0,0,0.1)'
       }
     },
   },
